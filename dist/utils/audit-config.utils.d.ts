@@ -1,0 +1,11 @@
+import { AuditAction } from 'src/enums/audit-actions.enums';
+import { TrackProcessOptions } from './audit-trails.utils';
+export declare function createPaymentAuditConfig(userId: string, action: AuditAction, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createPaymentVerificationAuditConfig(userId?: string, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createPenaltyPaymentAuditConfig(userId?: string, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createUserCreationAuditConfig(userId?: string, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createUserLoginAuditConfig(userId?: string, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createEstateCreationAuditConfig(userId: string, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createMessagingAuditConfig(provider: string, action?: AuditAction, userId?: string, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createCloudinaryAuditConfig(operation: 'upload' | 'delete', userId?: string, metadata?: Record<string, unknown>): TrackProcessOptions;
+export declare function createCrudAuditConfig(action: AuditAction, resource: string, userId?: string, metadata?: Record<string, unknown>): TrackProcessOptions;

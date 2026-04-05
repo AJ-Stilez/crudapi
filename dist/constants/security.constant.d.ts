@@ -1,0 +1,10 @@
+export declare const JWT_ACCESS_TOKEN_EXPIRATION = "60m";
+export declare const JWT_ACCESS_TOKEN_EXPIRATION_SECONDS: number;
+export declare const TOKEN_MAPPING_TTL_SECONDS: number;
+export declare const REFRESH_TOKEN_EXPIRATION_HOURS = 6;
+export declare const REFRESH_TOKEN_EXPIRATION_SECONDS: number;
+export declare const MAX_SESSION_LIFETIME_HOURS = 24;
+export declare const MAX_SESSION_LIFETIME_SECONDS: number;
+export declare const REFRESH_TOKEN_INACTIVITY_HOURS = 1;
+export declare const REFRESH_TOKEN_INACTIVITY_SECONDS: number;
+export declare const MAX_REFRESH_ATTEMPTS_PER_DAY = 20;
